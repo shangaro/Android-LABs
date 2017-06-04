@@ -1,0 +1,54 @@
+//package uwaterloo.com.lab01_204_04;
+//
+//import android.widget.Button;
+//
+///**
+// * Created by nicol on 2017-05-16.
+// */
+//
+//public static class FiniteStateMachine implements IFSMdesign {
+//
+//    @Override
+//    public boolean ParkingMeter(int Coins, Button timeReset) {
+//
+//        enum myFSMStates={COUNTDOWN,DEPLETION};
+//        myFSMStates myStates=COUNTDOWN;
+//        int time=180;//seconds
+//        activateGreenLED();
+//        deactivateRedLED();
+//        // Inside the handler
+//
+//        switch(myStates){
+//            case COUNTDOWN;
+//                time--;// decrease time;
+//                if(time==0){
+//                    //transition
+//                    myStates=DEPLETED;
+//                    deactivateGreenLED();
+//                    activateREDLED();
+//                }
+//                if(coinIn){
+//                    time+=coinValues;//
+//                    if(time>1800){
+//                        //cap it to 1800
+//                        time=1800;
+//                    }
+//                }
+//                break;
+//
+//            case DEPLETED :
+//
+//                if(coinIn){
+//                    time+=coinValue; // define coinValue later;
+//                    activate GreenLED();
+//                    deactivateREDLED();
+//                    if(time>1800){
+//                        time=1800;
+//                    }
+//                }
+//
+//                break;
+//        }
+//
+//    }
+//}
